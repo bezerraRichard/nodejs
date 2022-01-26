@@ -1,0 +1,20 @@
+{
+   "type": "mongodb",
+   "url":"mongodb+srv://patient:12345@cluster0.mw7v0.mongodb.net/patient?retryWrites=true&w=majority",
+   "synchronize": true,
+   "logging": true,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
